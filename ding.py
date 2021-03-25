@@ -7,8 +7,8 @@ import requests
 import json
 
 
-headers={'Content-Type': 'application/json'}
 def send_ding(content, preurl, key):
+    headers={'Content-Type': 'application/json'}
     msg = {
         'msgtype': 'text',
         'text': {'content': content}
